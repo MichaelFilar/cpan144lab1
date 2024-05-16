@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+
+    <!--Step 1-->
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+</head>
+<body>
+    <script>
+        
+        //Step 2
+        var date1 = moment('05/15/2024', 'MM/DD/YYYY', true);
+        var date2 = date1.startOf('day').fromNow();
+        alert(date2);
+        var date3 = date1.subtract(3,'days');
+        alert(date3);
+        
+        //Step 3
+        var numarray = ['one','two','three','four','five'];
+        var pulled = _.pull(numarray,'two','three');
+        alert(numarray);
+
+    </script>
+</body>
+</html>
